@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MyCal Destek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBFAF5;
+    --surface: #F1F6F1;
+    --surface-border: #DCE6DD;
+    --text: #1C2620;
+    --text-muted: #5B6B60;
+    --accent: #2F7A4F;
+    --accent-soft: #E4F0E6;
+    --accent-contrast: #FBFAF5;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121814;
+      --surface: #1A2119;
+      --surface-border: #2B342A;
+      --text: #EDF3EB;
+      --text-muted: #9BAAA0;
+      --accent: #6FCB8F;
+      --accent-soft: #22301F;
+      --accent-contrast: #0F1710;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #121814;
+    --surface: #1A2119;
+    --surface-border: #2B342A;
+    --text: #EDF3EB;
+    --text-muted: #9BAAA0;
+    --accent: #6FCB8F;
+    --accent-soft: #22301F;
+    --accent-contrast: #0F1710;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .mark {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: clamp(2.1rem, 4.5vw, 2.75rem);
+    line-height: 1.12;
+    text-wrap: balance;
+    margin: 18px 0 14px;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 54ch;
+    margin: 0 0 44px;
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin: 0 0 20px;
+  }
+
+  section + section { margin-top: 48px; }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  details {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 14px;
+    padding: 4px 20px;
+    transition: border-color 0.15s ease;
+  }
+
+  details[open] { border-color: var(--accent); }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 0;
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 6px;
+  }
+
+  .chev {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+
+  details[open] .chev { transform: rotate(45deg); }
+
+  .faq p {
+    margin: 0 0 18px;
+    color: var(--text-muted);
+    font-size: 0.96rem;
+    max-width: 62ch;
+  }
+
+  .contact {
+    background: var(--accent-soft);
+    border-radius: 16px;
+    padding: 28px 28px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .contact-text h2 { margin-bottom: 6px; }
+  .contact-text p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--surface-border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    details, .chev { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <span class="eyebrow"><span class="mark"></span>Destek Merkezi</span>
+  <h1>MyCal ile ilgili yardım</h1>
+  <p class="lede">
+    Sık sorulan soruların yanıtlarını aşağıda bulabilirsiniz. Aradığınızı bulamazsanız
+    doğrudan bize yazabilirsiniz.
+  </p>
+
+  <section>
+    <h2>Sık Sorulan Sorular</h2>
+    <div class="faq">
+      <details open>
+        <summary>MyCal nedir?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>MyCal, günlük kalori ve besin değerlerinizi takip etmenizi sağlayan bir beslenme
+        uygulamasıdır. Yediğiniz yemeğin fotoğrafını çekerek yapay zeka destekli anında
+        analiz alabilir, ya da öğünlerinizi manuel olarak kaydedebilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Fotoğraftan yemek analizi nasıl çalışır?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Çektiğiniz fotoğraf yapay zeka modeline gönderilir; yemek tahmini isim, kalori,
+        protein, yağ ve karbonhidrat değerleriyle birlikte saniyeler içinde önünüze gelir.
+        Bu bir Premium özelliğidir ve günlük kullanım sınırı vardır; sonuçları her zaman
+        kaydetmeden önce düzenleyebilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Premium abonelik neler sunuyor?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Premium, yapay zeka destekli fotoğraf analizini açar. Abonelik, App Store
+        hesabınız üzerinden yönetilir; iptal etmek için cihazınızdaki Ayarlar &gt;
+        Abonelikler bölümünü kullanabilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Verilerim güvende mi?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Günlük kayıtlarınız ve hesap bilgileriniz şifreli bağlantı üzerinden saklanır ve
+        yalnızca sizin hesabınızla ilişkilendirilir. Verileriniz üçüncü taraflarla
+        pazarlama amacıyla paylaşılmaz.</p>
+      </details>
+      <details>
+        <summary>Hesabımı nasıl silerim?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Uygulama içinde Ayarlar &gt; Hesabı Sil yolunu izleyerek hesabınızı ve tüm
+        verilerinizi kalıcı olarak silebilirsiniz. Bu işlem geri alınamaz.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-text">
+      <h2>Hâlâ yardıma mı ihtiyacınız var?</h2>
+      <p>Sorunuzu doğrudan bize e-posta ile iletin, size dönüş yapalım.</p>
+    </div>
+    <a class="btn" href="mailto:arutkayaziz@gmail.com">
+      E-posta gönder
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </section>
+
+  <footer>
+    <span>MyCal</span>
+    <span>destek: arutkayaziz@gmail.com</span>
+  </footer>
+</div>
+
+</body>
+</html>
