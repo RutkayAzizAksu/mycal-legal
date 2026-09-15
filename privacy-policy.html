@@ -299,6 +299,7 @@
       <li><a href="#use" onclick="return jumpTo(event,'use')" data-lang="tr">Verileri Nasıl Kullanıyoruz</a><a href="#use" onclick="return jumpTo(event,'use')" data-lang="en">How We Use It</a></li>
       <li><a href="#third-parties" onclick="return jumpTo(event,'third-parties')" data-lang="tr">Üçüncü Taraf Hizmetler</a><a href="#third-parties" onclick="return jumpTo(event,'third-parties')" data-lang="en">Third-Party Services</a></li>
       <li><a href="#ai" onclick="return jumpTo(event,'ai')" data-lang="tr">Yapay Zeka ile Fotoğraf Analizi</a><a href="#ai" onclick="return jumpTo(event,'ai')" data-lang="en">AI Photo Analysis</a></li>
+      <li><a href="#community" onclick="return jumpTo(event,'community')" data-lang="tr">Topluluk Akışı ("Dünya")</a><a href="#community" onclick="return jumpTo(event,'community')" data-lang="en">Community Feed ("Discover")</a></li>
       <li><a href="#retention" onclick="return jumpTo(event,'retention')" data-lang="tr">Saklama Süresi</a><a href="#retention" onclick="return jumpTo(event,'retention')" data-lang="en">Data Retention</a></li>
       <li><a href="#rights" onclick="return jumpTo(event,'rights')" data-lang="tr">Haklarınız ve Hesap Silme</a><a href="#rights" onclick="return jumpTo(event,'rights')" data-lang="en">Your Rights &amp; Deletion</a></li>
       <li><a href="#children" onclick="return jumpTo(event,'children')" data-lang="tr">Çocukların Gizliliği</a><a href="#children" onclick="return jumpTo(event,'children')" data-lang="en">Children's Privacy</a></li>
@@ -314,7 +315,7 @@
 
     <p class="doc-meta">
       <span data-lang="tr">Yürürlük tarihi:</span><span data-lang="en">Effective date:</span>
-      <strong> 30 Ağustos 2026 / August 30, 2026</strong>
+      <strong> 15 Eylül 2026 / September 15, 2026</strong>
     </p>
 
     <p class="intro" data-lang="tr">
@@ -356,6 +357,13 @@
             </td>
           </tr>
           <tr>
+            <td><span class="pill" data-lang="tr">Topluluk Paylaşımları</span><span class="pill" data-lang="en">Community Posts</span></td>
+            <td>
+              <span data-lang="tr">"Dünya" akışında paylaşmayı seçtiğin öğün fotoğrafları, açıklamalar, kalori/makro bilgisi; ayrıca beğendiğin paylaşımlar, şikayet ettiğin içerikler ve engellediğin kullanıcılar (yalnızca sen ve moderasyon paylaşmayı seçtiysen)</span>
+              <span data-lang="en">Meal photos, captions, and calorie/macro info you choose to post to the "Discover" feed; also the posts you like, the content you report, and the users you block (only if you choose to share)</span>
+            </td>
+          </tr>
+          <tr>
             <td><span class="pill" data-lang="tr">Cihaz</span><span class="pill" data-lang="en">Device</span></td>
             <td>
               <span data-lang="tr">Bildirim gönderebilmek için bir push bildirim token'ı; dil tercihi</span>
@@ -381,6 +389,7 @@
         <li>Premium özellik olan yemek fotoğrafı analizini gerçekleştirmek için</li>
         <li>İlerlemenle ilgili kişiselleştirilmiş hatırlatma bildirimleri göndermek için</li>
         <li>Premium aboneliğini doğrulamak ve yönetmek için</li>
+        <li>Paylaşmayı seçtiğin içerikleri "Dünya" akışında diğer kullanıcılara göstermek, beğeni/şikayet/engelleme özelliklerini sunmak için</li>
       </ul>
       <ul data-lang="en">
         <li>To calculate your daily calorie/macro targets and show your progress</li>
@@ -388,6 +397,7 @@
         <li>To perform the Premium meal-photo analysis feature</li>
         <li>To send personalized reminder notifications about your progress</li>
         <li>To verify and manage your Premium subscription</li>
+        <li>To show content you choose to share on the "Discover" feed to other users, and to power the like/report/block features</li>
       </ul>
       <p data-lang="tr">Verilerini asla üçüncü taraflara satmıyoruz veya reklam amacıyla paylaşmıyoruz.</p>
       <p data-lang="en">We never sell your data or share it for advertising purposes.</p>
@@ -419,38 +429,46 @@
       <p data-lang="en">When a Premium user submits a meal photo, it is sent to Google's Gemini model for processing and returns an estimated calorie/macro breakdown. This suggestion is always shown to you to review and edit before it's logged — it's never saved automatically. Photos are stored in a private storage location accessible only to you.</p>
     </section>
 
+    <section class="card" id="community">
+      <h2><span class="num">05</span><span data-lang="tr">Topluluk Akışı ("Dünya")</span><span data-lang="en">Community Feed ("Discover")</span></h2>
+      <p data-lang="tr">MyCal'de isteğe bağlı olarak bir öğün kaydını "Dünya" akışında paylaşabilirsin. Paylaştığında; fotoğrafın, (varsa) yazdığın açıklama, kalori/makro bilgisi ve görünen adın/profil fotoğrafın uygulamayı kullanan tüm kullanıcılara açık hale gelir. Bir paylaşımı istediğin zaman silebilirsin; hesabını sildiğinde tüm paylaşımların da otomatik olarak kaldırılır.</p>
+      <p data-lang="en">MyCal lets you optionally share a logged meal to the "Discover" feed. When you do, your photo, any caption you write, its calorie/macro info, and your display name/avatar become visible to every user of the app. You can delete a post at any time, and deleting your account automatically removes all of your posts too.</p>
+      <p data-lang="tr">Diğer kullanıcıların paylaşımlarını şikayet edebilir veya belirli kullanıcıları engelleyebilirsin. Bir paylaşım üç farklı kullanıcı tarafından şikayet edildiğinde, incelenene kadar otomatik olarak akıştan gizlenir. Şikayet kayıtları (hangi paylaşımın, hangi sebeple şikayet edildiği) yalnızca moderasyon amacıyla tutulur ve herkese açık değildir. Engellediğin kullanıcıların paylaşımları bir daha akışında görünmez.</p>
+      <p data-lang="en">You can report other users' posts or block specific users. A post is automatically hidden from the feed once three different users report it, pending review. Report records (which post, and why) are kept only for moderation purposes and are never public. Once you block a user, their posts no longer appear in your feed.</p>
+    </section>
+
     <section class="card" id="retention">
-      <h2><span class="num">05</span><span data-lang="tr">Saklama Süresi</span><span data-lang="en">Data Retention</span></h2>
+      <h2><span class="num">06</span><span data-lang="tr">Saklama Süresi</span><span data-lang="en">Data Retention</span></h2>
       <p data-lang="tr">Verilerin, hesabını silene kadar veya bize silmeni talep edene kadar saklanır. Bir besini kendi ekleyip (kullanıcı katkılı besin veritabanına) katkıda bulunursan, hesabını sildiğinde bu besin kaydı (kim eklediği bilgisi kaldırılarak) diğer kullanıcılara fayda sağlamak amacıyla veritabanında kalmaya devam edebilir — ancak bu kayıt artık seninle ilişkilendirilemez.</p>
       <p data-lang="en">Your data is kept until you delete your account or ask us to delete it. If you contribute a food item to the shared, crowd-sourced food database, that entry may remain in the database (with the "added by" link removed) after you delete your account so other users can keep benefiting from it — but it can no longer be linked back to you.</p>
     </section>
 
     <section class="card" id="rights">
-      <h2><span class="num">06</span><span data-lang="tr">Haklarınız ve Hesap Silme</span><span data-lang="en">Your Rights &amp; Deletion</span></h2>
+      <h2><span class="num">07</span><span data-lang="tr">Haklarınız ve Hesap Silme</span><span data-lang="en">Your Rights &amp; Deletion</span></h2>
       <p data-lang="tr">Uygulama içinde, <strong>Profil → Hesabı Sil</strong> yoluyla hesabını ve tüm kişisel verilerini (günlük kayıtların, fotoğraflarını, profil bilgilerin dahil) kalıcı olarak silebilirsin. Bu işlem geri alınamaz ve anında uygulanır.</p>
       <p data-lang="en">From within the app, you can permanently delete your account and all personal data (diary entries, photos, profile information) via <strong>Profile → Delete Account</strong>. This is irreversible and takes effect immediately.</p>
     </section>
 
     <section class="card" id="children">
-      <h2><span class="num">07</span><span data-lang="tr">Çocukların Gizliliği</span><span data-lang="en">Children's Privacy</span></h2>
+      <h2><span class="num">08</span><span data-lang="tr">Çocukların Gizliliği</span><span data-lang="en">Children's Privacy</span></h2>
       <p data-lang="tr">MyCal, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamayız.</p>
       <p data-lang="en">MyCal is not directed at children under 13, and we do not knowingly collect data from this age group.</p>
     </section>
 
     <section class="card" id="security">
-      <h2><span class="num">08</span><span data-lang="tr">Güvenlik</span><span data-lang="en">Security</span></h2>
+      <h2><span class="num">09</span><span data-lang="tr">Güvenlik</span><span data-lang="en">Security</span></h2>
       <p data-lang="tr">Verilerin, satır düzeyinde güvenlik (Row Level Security) uygulayan bir veritabanında tutulur — yani her kullanıcı yalnızca kendi verisine erişebilir. Yine de hiçbir internet aktarımı veya depolama yöntemi %100 güvenli değildir.</p>
       <p data-lang="en">Your data is stored in a database with row-level security enforced, meaning each user can only access their own data. That said, no method of transmission or storage over the internet is 100% secure.</p>
     </section>
 
     <section class="card" id="changes">
-      <h2><span class="num">09</span><span data-lang="tr">Politika Değişiklikleri</span><span data-lang="en">Changes to This Policy</span></h2>
+      <h2><span class="num">10</span><span data-lang="tr">Politika Değişiklikleri</span><span data-lang="en">Changes to This Policy</span></h2>
       <p data-lang="tr">Bu politikayı güncelleyebiliriz. Önemli değişikliklerde uygulama içinden bilgilendirilirsin. Bu sayfanın en güncel hali her zaman aynı bağlantıda yer alır.</p>
       <p data-lang="en">We may update this policy. You'll be notified in-app of any material changes. The latest version of this page always lives at the same link.</p>
     </section>
 
     <section class="card" id="contact">
-      <h2><span class="num">10</span><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></h2>
+      <h2><span class="num">11</span><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></h2>
       <p data-lang="tr">Verilerinle ilgili bir sorun için bana ulaşabilirsin:</p>
       <p data-lang="en">For any question about your data, reach out directly:</p>
       <div class="contact-card">
