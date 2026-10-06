@@ -299,7 +299,8 @@
       <li><a href="#use" onclick="return jumpTo(event,'use')" data-lang="tr">Verileri Nasıl Kullanıyoruz</a><a href="#use" onclick="return jumpTo(event,'use')" data-lang="en">How We Use It</a></li>
       <li><a href="#third-parties" onclick="return jumpTo(event,'third-parties')" data-lang="tr">Üçüncü Taraf Hizmetler</a><a href="#third-parties" onclick="return jumpTo(event,'third-parties')" data-lang="en">Third-Party Services</a></li>
       <li><a href="#ai" onclick="return jumpTo(event,'ai')" data-lang="tr">Yapay Zeka ile Fotoğraf Analizi</a><a href="#ai" onclick="return jumpTo(event,'ai')" data-lang="en">AI Photo Analysis</a></li>
-      <li><a href="#community" onclick="return jumpTo(event,'community')" data-lang="tr">Topluluk Akışı ("Dünya")</a><a href="#community" onclick="return jumpTo(event,'community')" data-lang="en">Community Feed ("Discover")</a></li>
+      <li><a href="#community" onclick="return jumpTo(event,'community')" data-lang="tr">Arkadaş Akışı ve Uzman Paylaşımı</a><a href="#community" onclick="return jumpTo(event,'community')" data-lang="en">Friends Feed &amp; Expert Sharing</a></li>
+      <li><a href="#kvkk" onclick="return jumpTo(event,'kvkk')" data-lang="tr">KVKK Aydınlatma ve Açık Rıza</a><a href="#kvkk" onclick="return jumpTo(event,'kvkk')" data-lang="en">KVKK Notice &amp; Explicit Consent</a></li>
       <li><a href="#retention" onclick="return jumpTo(event,'retention')" data-lang="tr">Saklama Süresi</a><a href="#retention" onclick="return jumpTo(event,'retention')" data-lang="en">Data Retention</a></li>
       <li><a href="#rights" onclick="return jumpTo(event,'rights')" data-lang="tr">Haklarınız ve Hesap Silme</a><a href="#rights" onclick="return jumpTo(event,'rights')" data-lang="en">Your Rights &amp; Deletion</a></li>
       <li><a href="#children" onclick="return jumpTo(event,'children')" data-lang="tr">Çocukların Gizliliği</a><a href="#children" onclick="return jumpTo(event,'children')" data-lang="en">Children's Privacy</a></li>
@@ -315,7 +316,7 @@
 
     <p class="doc-meta">
       <span data-lang="tr">Yürürlük tarihi:</span><span data-lang="en">Effective date:</span>
-      <strong> 15 Eylül 2026 / September 15, 2026</strong>
+      <strong> 7 Ekim 2026 / October 7, 2026</strong>
     </p>
 
     <p class="intro" data-lang="tr">
@@ -345,15 +346,15 @@
           <tr>
             <td><span class="pill" data-lang="tr">Sağlık &amp; Beslenme</span><span class="pill" data-lang="en">Health &amp; Diet</span></td>
             <td>
-              <span data-lang="tr">Cinsiyet, doğum tarihi, boy, kilo, aktivite seviyesi, hedeflerin; günlük besin kayıtların (öğün, miktar, kalori/makro); kilo ve su takibi kayıtları</span>
-              <span data-lang="en">Sex, birth date, height, weight, activity level, and goals; your daily food log entries (meal, quantity, calories/macros); weight and water tracking entries</span>
+              <span data-lang="tr">Cinsiyet, doğum tarihi, boy, kilo, aktivite seviyesi, hedeflerin; günlük besin kayıtların (öğün, miktar, kalori/makro); kilo ve su takibi kayıtları; izin verirsen Apple Sağlık'tan adım ve antrenman verilerin</span>
+              <span data-lang="en">Sex, birth date, height, weight, activity level, and goals; your daily food log entries (meal, quantity, calories/macros); weight and water tracking entries; step and workout data from Apple Health if you allow it</span>
             </td>
           </tr>
           <tr>
             <td><span class="pill" data-lang="tr">Fotoğraflar</span><span class="pill" data-lang="en">Photos</span></td>
             <td>
-              <span data-lang="tr">Yapay zeka ile analiz etmek üzere çektiğin/seçtiğin yemek fotoğrafları (yalnızca Premium özelliği kullanırsan)</span>
-              <span data-lang="en">Meal photos you take or pick for AI analysis (only if you use the Premium photo-logging feature)</span>
+              <span data-lang="tr">Yapay zeka ile analiz etmek üzere çektiğin/seçtiğin yemek, menü ve etiket fotoğrafları (yalnızca bu özellikleri kullanırsan); haftalık ilerleme fotoğrafların (yalnızca yüklersen)</span>
+              <span data-lang="en">Meal, menu and label photos you take or pick for AI analysis (only if you use these features); weekly progress photos (only if you upload them)</span>
             </td>
           </tr>
           <tr>
@@ -409,14 +410,14 @@
       <p data-lang="en">MyCal relies on the following services to operate. Each only receives the data it needs for its specific function:</p>
       <ul data-lang="tr">
         <li><strong>Supabase</strong> — hesap girişi, veritabanı ve fotoğraf depolama altyapımız</li>
-        <li><strong>Google (Gemini)</strong> — Premium yemek fotoğrafı analizi için görüntü işleme</li>
+        <li><strong>Google (Gemini)</strong> ve <strong>Groq</strong> — yapay zeka özellikleri (fotoğraf, menü ve etiket analizi, sesli kayıt, asistan) için yalnızca ilgili isteğin fotoğraf/metni işlenir (ABD)</li>
         <li><strong>RevenueCat</strong> — App Store/Play Store abonelik durumunun yönetimi</li>
         <li><strong>Open Food Facts</strong> — barkodlu ürünler için açık kaynaklı, herkese açık besin veritabanı (buraya kişisel verin gönderilmez, yalnızca barkod numarası sorgulanır)</li>
         <li><strong>Expo</strong> — push bildirimlerinin iletimi</li>
       </ul>
       <ul data-lang="en">
         <li><strong>Supabase</strong> — our authentication, database, and photo storage infrastructure</li>
-        <li><strong>Google (Gemini)</strong> — image processing for the Premium meal-photo analysis feature</li>
+        <li><strong>Google (Gemini)</strong> and <strong>Groq</strong> — AI features (photo, menu and label analysis, voice logging, the assistant); only the photo/text of that request is processed (US)</li>
         <li><strong>RevenueCat</strong> — manages App Store/Play Store subscription status</li>
         <li><strong>Open Food Facts</strong> — an open, public food database for barcoded products (no personal data is sent to it, only the scanned barcode)</li>
         <li><strong>Expo</strong> — delivers push notifications</li>
@@ -425,50 +426,60 @@
 
     <section class="card" id="ai">
       <h2><span class="num">04</span><span data-lang="tr">Yapay Zeka ile Fotoğraf Analizi</span><span data-lang="en">AI Photo Analysis</span></h2>
-      <p data-lang="tr">Premium kullanıcılar bir yemek fotoğrafı gönderdiğinde, fotoğraf işlenmek üzere Google'ın Gemini modeline iletilir ve tahmini kalori/makro değerleri döndürülür. Bu öneri her zaman günlüğüne eklenmeden önce senin onayına/düzenlemene sunulur — otomatik olarak kaydedilmez. Fotoğraflar, güvenli ve yalnızca sana ait bir depolama alanında saklanır.</p>
-      <p data-lang="en">When a Premium user submits a meal photo, it is sent to Google's Gemini model for processing and returns an estimated calorie/macro breakdown. This suggestion is always shown to you to review and edit before it's logged — it's never saved automatically. Photos are stored in a private storage location accessible only to you.</p>
+      <p data-lang="tr">Bir yemek fotoğrafı gönderdiğinde, fotoğraf işlenmek üzere Google'ın Gemini modeline (gerekirse yedek olarak Groq'a) iletilir ve tahmini kalori/makro değerleri döndürülür. Bu öneri her zaman günlüğüne eklenmeden önce senin onayına/düzenlemene sunulur — otomatik olarak kaydedilmez. Fotoğraflar, güvenli ve yalnızca sana ait bir depolama alanında saklanır.</p>
+      <p data-lang="en">When you submit a meal photo, it is sent to Google's Gemini model (or Groq as a fallback) for processing and returns an estimated calorie/macro breakdown. This suggestion is always shown to you to review and edit before it's logged — it's never saved automatically. Photos are stored in a private storage location accessible only to you.</p>
     </section>
 
     <section class="card" id="community">
-      <h2><span class="num">05</span><span data-lang="tr">Topluluk Akışı ("Dünya")</span><span data-lang="en">Community Feed ("Discover")</span></h2>
-      <p data-lang="tr">MyCal'de isteğe bağlı olarak bir öğün kaydını "Dünya" akışında paylaşabilirsin. Paylaştığında; fotoğrafın, (varsa) yazdığın açıklama, kalori/makro bilgisi ve görünen adın/profil fotoğrafın uygulamayı kullanan tüm kullanıcılara açık hale gelir. Bir paylaşımı istediğin zaman silebilirsin; hesabını sildiğinde tüm paylaşımların da otomatik olarak kaldırılır.</p>
-      <p data-lang="en">MyCal lets you optionally share a logged meal to the "Discover" feed. When you do, your photo, any caption you write, its calorie/macro info, and your display name/avatar become visible to every user of the app. You can delete a post at any time, and deleting your account automatically removes all of your posts too.</p>
+      <h2><span class="num">05</span><span data-lang="tr">Arkadaş Akışı ve Uzman Paylaşımı</span><span data-lang="en">Friends Feed &amp; Expert Sharing</span></h2>
+      <p data-lang="tr">MyCal'de isteğe bağlı olarak bir öğünü veya gününü akışta paylaşabilirsin. Paylaşımlar yalnızca arkadaşların tarafından görülür; fotoğrafın, (varsa) açıklaman, kalori/makro bilgisi ve görünen adın/profil fotoğrafın arkadaşlarına açık hale gelir. Bir uzmana (diyetisyen/koç) kendi isteğinle bağlanırsan, bağlantı süresince uzmanın yemek kayıtlarını, hedeflerini, kilo ve check-in bilgilerini görebilir; bağlantıyı istediğin an kesebilirsin. Bir paylaşımı istediğin zaman silebilirsin; hesabını sildiğinde tüm paylaşımların da otomatik olarak kaldırılır.</p>
+      <p data-lang="en">MyCal lets you optionally share a meal or your day to the feed. Posts are visible only to your friends: your photo, any caption, its calorie/macro info, and your display name/avatar become visible to them. If you choose to connect with an expert (dietitian/coach), they can see your food log, targets, weight and check-ins while connected; you can disconnect at any time. You can delete a post at any time, and deleting your account automatically removes all of your posts too.</p>
       <p data-lang="tr">Diğer kullanıcıların paylaşımlarını şikayet edebilir veya belirli kullanıcıları engelleyebilirsin. Bir paylaşım üç farklı kullanıcı tarafından şikayet edildiğinde, incelenene kadar otomatik olarak akıştan gizlenir. Şikayet kayıtları (hangi paylaşımın, hangi sebeple şikayet edildiği) yalnızca moderasyon amacıyla tutulur ve herkese açık değildir. Engellediğin kullanıcıların paylaşımları bir daha akışında görünmez.</p>
       <p data-lang="en">You can report other users' posts or block specific users. A post is automatically hidden from the feed once three different users report it, pending review. Report records (which post, and why) are kept only for moderation purposes and are never public. Once you block a user, their posts no longer appear in your feed.</p>
     </section>
 
+    <section class="card" id="kvkk">
+      <h2><span class="num">06</span><span data-lang="tr">KVKK Aydınlatma ve Açık Rıza</span><span data-lang="en">KVKK Notice &amp; Explicit Consent</span></h2>
+      <p data-lang="tr"><strong>Veri sorumlusu:</strong> Rutkay Aziz Aksu (iletişim bilgileri aşağıdadır). Kilo, boy, beslenme ve aktivite bilgilerin 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında <strong>özel nitelikli kişisel veri</strong> (sağlık verisi) sayılır. Bu veriler, uygulamayı ilk açtığında verdiğin <strong>açık rızaya</strong> dayanarak, yalnızca bu politikada yazan amaçlarla işlenir.</p>
+      <p data-lang="tr"><strong>Saklama yeri ve yurt dışı aktarım:</strong> Verilerin Supabase altyapısında Almanya'daki (AB, Frankfurt) sunucularda şifreli olarak saklanır. Yapay zeka özelliklerini kullandığında, yalnızca o isteğin fotoğrafı veya metni ABD'deki Google Gemini ve Groq hizmetlerine iletilir; abonelik durumu RevenueCat'e, bildirim token'ı Expo'ya aktarılır. Bu aktarımlar da açık rızana dayanır.</p>
+      <p data-lang="tr"><strong>Hakların (KVKK m.11):</strong> Verilerinin işlenip işlenmediğini öğrenme, bilgi talep etme, amacını öğrenme, aktarıldığı kişileri bilme, düzeltilmesini veya silinmesini isteme, itiraz etme ve zararın giderilmesini talep etme hakların vardır. Açık rızanı istediğin zaman geri alabilirsin; bu durumda hesabını uygulamadan silebilir ya da aşağıdaki e-posta adresine yazabilirsin. Başvurularına en geç 30 gün içinde yanıt verilir.</p>
+      <p data-lang="en"><strong>Data controller:</strong> Rutkay Aziz Aksu (contact below). Your weight, height, diet and activity information is <strong>special-category personal data</strong> (health data) under Turkey's Personal Data Protection Law No. 6698 (KVKK). It is processed only for the purposes in this policy, based on the <strong>explicit consent</strong> you give when you first open the app.</p>
+      <p data-lang="en"><strong>Storage and transfers abroad:</strong> Your data is stored encrypted on Supabase servers in Germany (EU, Frankfurt). When you use AI features, only the photo or text of that request is sent to Google Gemini and Groq in the US; subscription status goes to RevenueCat and your push token to Expo. These transfers are also based on your explicit consent.</p>
+      <p data-lang="en"><strong>Your rights (KVKK Art. 11):</strong> You may learn whether your data is processed, request information, learn the purpose and recipients, ask for correction or deletion, object, and claim compensation. You can withdraw consent at any time by deleting your account in the app or emailing the address below. Requests are answered within 30 days.</p>
+    </section>
+
     <section class="card" id="retention">
-      <h2><span class="num">06</span><span data-lang="tr">Saklama Süresi</span><span data-lang="en">Data Retention</span></h2>
+      <h2><span class="num">07</span><span data-lang="tr">Saklama Süresi</span><span data-lang="en">Data Retention</span></h2>
       <p data-lang="tr">Verilerin, hesabını silene kadar veya bize silmeni talep edene kadar saklanır. Bir besini kendi ekleyip (kullanıcı katkılı besin veritabanına) katkıda bulunursan, hesabını sildiğinde bu besin kaydı (kim eklediği bilgisi kaldırılarak) diğer kullanıcılara fayda sağlamak amacıyla veritabanında kalmaya devam edebilir — ancak bu kayıt artık seninle ilişkilendirilemez.</p>
       <p data-lang="en">Your data is kept until you delete your account or ask us to delete it. If you contribute a food item to the shared, crowd-sourced food database, that entry may remain in the database (with the "added by" link removed) after you delete your account so other users can keep benefiting from it — but it can no longer be linked back to you.</p>
     </section>
 
     <section class="card" id="rights">
-      <h2><span class="num">07</span><span data-lang="tr">Haklarınız ve Hesap Silme</span><span data-lang="en">Your Rights &amp; Deletion</span></h2>
+      <h2><span class="num">08</span><span data-lang="tr">Haklarınız ve Hesap Silme</span><span data-lang="en">Your Rights &amp; Deletion</span></h2>
       <p data-lang="tr">Uygulama içinde, <strong>Profil → Hesabı Sil</strong> yoluyla hesabını ve tüm kişisel verilerini (günlük kayıtların, fotoğraflarını, profil bilgilerin dahil) kalıcı olarak silebilirsin. Bu işlem geri alınamaz ve anında uygulanır.</p>
       <p data-lang="en">From within the app, you can permanently delete your account and all personal data (diary entries, photos, profile information) via <strong>Profile → Delete Account</strong>. This is irreversible and takes effect immediately.</p>
     </section>
 
     <section class="card" id="children">
-      <h2><span class="num">08</span><span data-lang="tr">Çocukların Gizliliği</span><span data-lang="en">Children's Privacy</span></h2>
+      <h2><span class="num">09</span><span data-lang="tr">Çocukların Gizliliği</span><span data-lang="en">Children's Privacy</span></h2>
       <p data-lang="tr">MyCal, 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamayız.</p>
       <p data-lang="en">MyCal is not directed at children under 13, and we do not knowingly collect data from this age group.</p>
     </section>
 
     <section class="card" id="security">
-      <h2><span class="num">09</span><span data-lang="tr">Güvenlik</span><span data-lang="en">Security</span></h2>
+      <h2><span class="num">10</span><span data-lang="tr">Güvenlik</span><span data-lang="en">Security</span></h2>
       <p data-lang="tr">Verilerin, satır düzeyinde güvenlik (Row Level Security) uygulayan bir veritabanında tutulur — yani her kullanıcı yalnızca kendi verisine erişebilir. Yine de hiçbir internet aktarımı veya depolama yöntemi %100 güvenli değildir.</p>
       <p data-lang="en">Your data is stored in a database with row-level security enforced, meaning each user can only access their own data. That said, no method of transmission or storage over the internet is 100% secure.</p>
     </section>
 
     <section class="card" id="changes">
-      <h2><span class="num">10</span><span data-lang="tr">Politika Değişiklikleri</span><span data-lang="en">Changes to This Policy</span></h2>
+      <h2><span class="num">11</span><span data-lang="tr">Politika Değişiklikleri</span><span data-lang="en">Changes to This Policy</span></h2>
       <p data-lang="tr">Bu politikayı güncelleyebiliriz. Önemli değişikliklerde uygulama içinden bilgilendirilirsin. Bu sayfanın en güncel hali her zaman aynı bağlantıda yer alır.</p>
       <p data-lang="en">We may update this policy. You'll be notified in-app of any material changes. The latest version of this page always lives at the same link.</p>
     </section>
 
     <section class="card" id="contact">
-      <h2><span class="num">11</span><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></h2>
+      <h2><span class="num">12</span><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></h2>
       <p data-lang="tr">Verilerinle ilgili bir sorun için bana ulaşabilirsin:</p>
       <p data-lang="en">For any question about your data, reach out directly:</p>
       <div class="contact-card">
